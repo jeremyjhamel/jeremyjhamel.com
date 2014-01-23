@@ -1,0 +1,149 @@
+/* Print */
+
+@media print {
+  html{
+    background:transparent;
+  }
+
+  body{
+    position:relative;
+  }
+
+  *{
+    font-family:$font;
+    @include box-sizing(border-box);
+  }
+
+  .orange{
+    color:$orange;
+  }
+
+  html{
+    color:$gray_dark;
+    font-size:1.8em;
+    font-weight:300;
+  }
+
+  body{
+    background:$white;
+    margin:20px auto;
+    padding:20px;
+    width:800px;
+  }
+
+  header{
+    border-bottom:2px dashed $gray_light;
+    display:table;
+    font-size:0.8em;
+    padding:0 0 20px 0;
+
+    div{
+      display:table-cell;
+
+      &.left{
+        vertical-align:middle;
+        padding:0 5% 0 0;
+        width:55%;
+      }
+
+      &.right{
+        border-left:2px dashed $gray_light;
+        border-top:none;
+        padding:0 0 0 5%;
+        width:35%;
+      }
+    }
+
+    img{
+      max-width:80%;
+    }
+
+    dl{
+      display:block;
+      width:100%;
+
+      dt{
+        clear:both;
+        color:$orange;
+        display:inline;
+        float:left;
+        font-weight:700;
+        text-align:right;
+        text-transform:uppercase;
+        width:20%;
+      }
+      dd{
+        display:inline;
+        float:left;
+        margin:0;
+        padding:0 0 0 5%;
+        width:75%;
+      }
+    }
+  }
+
+  h1{
+    background:$orange;
+    border-radius:2px;
+    color:$white;
+    display:inline-block;
+    font-weight:100;
+    margin:20px 0 0 0;
+    padding:5px 10px;
+    text-transform:uppercase;
+  }
+
+  .border{
+    border-bottom:2px dashed $gray_light;
+  }
+
+  .experience{
+    display:table;
+    padding:20px 0;
+    width:100%;
+
+    div{
+      display:table-cell;
+      font-size:0.8em;
+
+      strong{
+        font-size:1.2em;
+        text-transform:uppercase;
+      }
+
+      &.left{
+        width:30%;
+      }
+      &.right{
+        width:70%;
+      }
+    }
+  }
+
+  .skills{
+    font-size:0.8em;
+    padding:20px 0;
+    @include clearfix;
+
+    p{
+      margin:0;
+    }
+
+    strong{
+      font-size:1.2em;
+      text-transform:uppercase;
+    }
+  }
+
+  .third{
+    float:left;
+    width:30%;
+  }
+
+  .two-third{
+    float:left;
+    padding:0 10% 0 0;
+    width:60%;
+  }
+
+}

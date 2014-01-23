@@ -1,0 +1,207 @@
+*{
+  font-family:$font;
+  @include box-sizing(border-box);
+}
+
+.orange{
+  color:$orange;
+}
+
+html{
+  background:$gray_light;
+  color:$gray_dark;
+  font-size:1.8em;
+  font-weight:300;
+}
+
+body{
+  background:$white;
+  margin:20px;
+  padding:20px;
+}
+
+header{
+  border-bottom:2px dashed $gray_light;
+  font-size:0.8em;
+  padding:0 0 20px 0;
+
+  img{
+    margin:0 5%;
+    width:90%;
+  }
+
+  dl{
+    display:block;
+    margin:0 auto;
+    width:250px;
+
+    @include clearfix;
+
+    dt{
+      clear:both;
+      color:$orange;
+      display:inline;
+      float:left;
+      font-weight:700;
+      text-align:right;
+      text-transform:uppercase;
+      width:20%;
+    }
+    dd{
+      display:inline;
+      float:left;
+      margin:0;
+      padding:0 0 0 5%;
+      width:75%;
+    }
+  }
+  div.right{
+    border-top:2px dashed $gray_light;
+    margin:20px 0 0 0;
+    padding:20px 0 0 0;
+  }
+}
+
+h1{
+  background:$orange;
+  border-radius:2px;
+  color:$white;
+  display:inline-block;
+  font-weight:100;
+  margin:20px 0 0 0;
+  padding:5px 10px;
+  text-transform:uppercase;
+}
+
+.border{
+  border-bottom:2px dashed $gray_light;
+}
+
+.experience{
+  padding:20px 0;
+  width:100%;
+
+  div{
+    font-size:0.8em;
+
+    strong{
+      font-size:1.2em;
+      text-transform:uppercase;
+    }
+  }
+
+  ul{
+    margin:0;
+    padding:0 0 0 20px;
+  }
+}
+
+.skills{
+  font-size:0.8em;
+
+  strong{
+    font-size:1.2em;
+    text-transform:uppercase;
+  }
+
+  p{
+    margin:20px 0;
+  }
+}
+
+@media only screen and (min-width:450px) {
+  header{
+    img{
+      margin:0 5%;
+      width:90%;
+    }
+  }
+}
+
+@media only screen and (min-width:600px) {
+  header{
+    display:table;
+
+    div{
+      display:table-cell;
+
+      &.left{
+        vertical-align:middle;
+        padding:0 5% 0 0;
+        width:45%;
+      }
+
+      &.right{
+        border-left:2px dashed $gray_light;
+        border-top:0;
+        margin:0;
+        padding:0 0 0 5%;
+        width:45%;
+      }
+    }
+    dl{
+      width:100%;
+    }
+    img{
+      margin:0;
+      width:100%;
+    }
+  }
+}
+
+
+@media only screen and (min-width:840px) {
+  body{
+    margin:20px auto;
+    width:800px;
+  }
+
+  header{
+    div{
+      &.left{
+        width:55%;
+      }
+      &.right{
+        width:35%;
+      }
+    }
+    img{
+      width:80%;
+    }
+  }
+
+  .experience{
+    display:table;
+
+    div{
+      display:table-cell;
+
+      &.left{
+        width:30%;
+      }
+      &.right{
+        width:70%;
+      }
+    }
+  }
+
+  .skills{
+    padding:20px 0;
+    @include clearfix;
+
+    p{
+      margin:0;
+    }
+  }
+
+  .third{
+    float:left;
+    width:30%;
+  }
+
+  .two-third{
+    float:left;
+    padding:0 10% 0 0;
+    width:60%;
+  }
+}

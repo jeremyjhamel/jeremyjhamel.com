@@ -1,0 +1,26 @@
+/*
+  http://www.jeremyjhamel.com
+  resume
+  built with SASS
+*/
+
+@import 'reset';
+@import 'bourbon/bourbon';
+
+
+$orange: #f7941e;
+
+$blue:#00235d;
+$green:#8dc63f;
+
+$gray_dark: #666;
+$gray_medium: #999;
+$gray_light: #ccc;
+$gray_soft:#eee;
+
+$white:#fff;
+
+$font: "proxima-nova",sans-serif;
+
+@import 'main';
+@import 'print';
