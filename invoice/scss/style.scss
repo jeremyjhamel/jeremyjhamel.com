@@ -1,0 +1,30 @@
+/*
+  http://www.jeremyjhamel.com
+  invoices
+  built with SASS
+*/
+
+@import 'reset';
+@import 'bourbon/bourbon';
+
+
+$orange: #f87a2a;
+$orange_dark: #ec6814;
+
+$blue:#00235d;
+$green:#8dc63f;
+
+$gray_dark: #666;
+$gray_medium: #999;
+$gray_light: #ccc;
+$gray_soft:#eee;
+
+$white:#fff;
+
+
+$slab_font: "museo-slab",serif;
+$default_font: "museo",serif;
+
+
+@import 'main';
+@import 'print';

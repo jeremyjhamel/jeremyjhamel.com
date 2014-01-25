@@ -1,0 +1,19 @@
+/* Print */
+
+@media print {
+  html{
+    background:transparent;
+  }
+
+  body{
+    height:11in;
+    position:relative;
+  }
+
+  footer{
+    bottom:0;
+    margin:0;
+    position:absolute;
+    width:100%;
+  }
+}

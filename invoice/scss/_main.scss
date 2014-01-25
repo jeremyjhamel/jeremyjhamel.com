@@ -1,0 +1,226 @@
+*{
+  @include box-sizing(border-box);
+}
+
+html{
+  background:$gray_light;
+  color:$gray_medium;
+  font-family:$default_font;
+  font-size:1.8em;
+  font-weight:300;
+}
+
+body{
+  background:$white;
+  margin:20px auto;
+  padding:20px;
+  width:800px;
+}
+
+header{
+  margin:0 0 40px 0;
+  @include clearfix;
+
+  h1{
+    border-bottom:2px solid $gray_medium;
+    color:$orange;
+    font-family:$slab_font;
+    font-size:4em;
+    font-weight:100;
+    text-align:center;
+  }
+
+  ul{
+    float:right;
+    list-style:none;
+    margin:0;
+    padding:0;
+
+    li{
+      border:2px solid $gray_medium;
+      border-top:0 none;
+      display:inline-block;
+      float:left;
+      font-size:0.7em;
+      margin:0;
+      padding:10px;
+      text-align:center;
+      width:125px;
+
+      span, strong, em{
+        display:block;
+        font-style:normal;
+      }
+
+      span{
+        font-family:$slab_font;
+        text-transform:uppercase;
+      }
+
+      strong{
+        font-size:1.4em;
+        padding:5px 0 0 0;
+        text-transform:uppercase;
+      }
+      em{
+        color:$gray_light;
+        font-size:0.8em;
+      }
+
+      &.amount{
+        background:$gray_medium;
+        color:$white;
+      }
+      &.invoice-date{
+        border-radius:0 0 0 5px;
+      }
+      &.due-date{
+        border-radius:0 0 5px 0;
+      }
+    }
+  }
+
+  dl{
+    float:left;
+    list-style:none;
+    margin:0;
+    padding:10px 0 0 0;
+
+    dt{
+      clear:left;
+      color:$gray_dark;
+      float:left;
+      font-family:$slab_font;
+      font-weight:700;
+      text-transform:uppercase;
+      width:105px;
+    }
+
+    dd{
+      float:left;
+      margin:0 0 0 10px;
+    }
+  }
+
+  table{
+    float:left;
+    margin:10px 0 0 0;
+    width:350px;
+
+    th{
+      color:$gray_dark;
+      font-family:$slab_font;
+      font-weight:700;
+      text-transform:uppercase;
+      width:120px;
+    }
+
+    tr{
+      background:none !important;
+    }
+
+    th, td{
+      background:none !important;
+      text-align:left;
+      vertical-align:top;
+    }
+  }
+}
+
+table{
+  border:0 none;
+  width:100%;
+
+  th, td{
+    border:0 none;
+    padding:5px 10px;
+    text-align:center;
+    vertical-align:middle;
+
+    &.product{
+      text-align:left;
+    }
+
+    &.total{
+      text-align:right;
+    }
+  }
+
+  thead{
+    background:$gray_medium;
+
+    th{
+      background:$gray_medium;
+      color:$white;
+      font-family:$slab_font;
+      font-size:0.8em;
+      font-weight:700;
+      text-transform:uppercase;
+    }
+  }
+
+  tbody{
+    tr:nth-child(odd){
+      background:$gray_soft;
+
+      td{
+        background:$gray_soft;
+      }
+    }
+  }
+
+  tfoot{
+    background:$orange;
+
+    td{
+      color:$white;
+
+      &.rate{
+        text-align:right;
+      }
+    }
+
+    &.simple{
+      td{
+        padding:20px 10px;
+      }
+    }
+  }
+}
+
+footer{
+  background:$gray_dark;
+  color:$white;
+  margin:100px 0 0 0;
+  padding:20px;
+
+  @include clearfix;
+
+  a{
+    color:$white;
+  }
+
+  div.right{
+    display:table;
+    font-size:0.7em;
+    margin:0 auto;
+    width:400px;
+
+    div.contact{
+      display:table-cell;
+      text-align:right;
+      vertical-align:middle;
+      width:50%;
+    }
+    div.thanks{
+      display:table-cell;
+      font-family:$slab_font;
+      font-size:2em;
+      padding:0 0 0 10px;
+      text-align:left;
+      text-transform:uppercase;
+      vertical-align:middle;
+      width:50%;
+    }
+  }
+}
