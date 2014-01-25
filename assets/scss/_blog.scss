@@ -1,0 +1,154 @@
+article.post{
+	padding:0 0 20px 0;
+
+	@include clearfix;
+
+	header{
+		h1{
+			float:none;
+			font-size:3.6em;
+			line-height:1;
+			margin:0;
+			text-align:left;
+			text-transform:lowercase;
+		}
+	}
+	aside{
+		ul{
+			color:#ccc;
+			list-style:none;
+			margin:0;
+			padding:0;
+			text-align:left;
+		}
+		time{
+			color:#ccc;
+			display:block;
+			font-size:1.2em;
+			font-weight:700;
+			line-height:1;
+			padding:10px 0 0 0;
+			text-transform:uppercase;
+		}
+	}
+	footer.tags{
+		color:#999;
+		font-size:1.4em;
+		font-style:italic;
+		margin:0;
+		padding:2px 0;
+		text-align:left;
+		
+
+		i{
+			font-size:1.4em;
+			padding:0 5px 0 0;
+		}
+	}
+}
+
+
+aside.sidebar{
+	ul{
+		li{
+			time{
+				display:inline;
+				text-transform:uppercase;
+			}
+		}
+	}
+
+	p.tags{
+		margin:0;
+		font-size:0.9em !important;
+		padding:2px 0;
+		color:#999;
+	}
+
+	section.archive{
+		ul{
+			-webkit-columns:150px 2;
+			-moz-columns:150px 2;
+			columns:150px 2;
+		}
+		a{
+			font-weight:300;
+			font-style:none;
+			text-transform:uppercase;
+
+			strong{
+				font-weight:700;
+			}
+		}
+
+		p{
+			text-align:right;
+		}
+	}
+}
+
+
+
+@media only screen and (min-width:600px) {
+  	
+    article.post{
+        padding:20px 0 20px 150px;
+        border-bottom:1px solid #ccc;
+
+        header{
+            h1{
+                margin:20px 0 0 0;
+            }
+        }
+
+        aside{
+            width:110px;
+            float:left;
+            border-right:1px solid #ccc;
+            padding:0 10px 0 0;
+            margin:0 0 0 -150px;
+
+            time{
+                display:block;
+                font-size:1.8em;
+                font-weight:300;
+                line-height:1;
+                text-align:center;
+                padding:0 0 20px 0;
+
+                span{
+                	display:block;
+                	font-size:3.6em;
+                	font-weight:700;
+                	padding:0;
+                }
+            }
+        }
+    }
+    
+    #main aside.sidebar section{
+        &.recent{
+        	width:60%;
+        	float:left;
+        }
+        &.archive{
+        	width:30%;
+        	float:right;
+        }
+    }
+    aside.sidebar section.archive ul{
+    	-webkit-columns:1;
+    	-moz-columns:1;
+    	columns:1;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    #main aside.sidebar{
+    	section.recent, section.archive{
+    		width:auto;
+    		float:none;
+    	}
+    }
+}

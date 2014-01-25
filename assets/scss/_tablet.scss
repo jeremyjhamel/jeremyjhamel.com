@@ -1,0 +1,36 @@
+@media only screen and (min-width: 600px) {
+    #main{
+        min-height:300px;
+    }
+    #main p{
+        font-size:1.6em;
+    }
+    
+    article{
+        header{
+            h1{
+                float:left;
+                font-size:4.8em;
+                text-align:left;
+            }
+        }
+    }
+    
+    footer{
+        text-align:left;
+
+        p{
+            float:left;
+            margin:0;
+            padding:0 0 0 20px;
+        }
+        form{
+            float:right;
+            padding:0 20px 0 0;
+
+            input[type=search]{
+                width:250px;
+            }
+        }
+    }
+}

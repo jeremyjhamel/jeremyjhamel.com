@@ -1,0 +1,60 @@
+@mixin clearfix{
+	zoom:1;
+	&:after{
+		content:"";
+    	display:table;
+    	clear:both;
+	}
+	&:both{
+		content:"";
+    	display:table;
+	}
+}
+
+@mixin transition($property: all, $duration: 0.25s, $function: ease-in-out) {
+	-webkit-transition:$property $duration $function;
+	-moz-transition:$property $duration $function;
+	-ms-transition:$property $duration $function;
+	-o-transition:$property $duration $function;;
+	transition:$property $duration $function;
+}
+
+@mixin box-shadow($inset, $hort_len:0px, $vert_len:0px, $blur:7px, $spread:1px, $color:rgba(0, 0, 0, 0.3)){
+	-webkit-box-shadow: $inset $hort_len $vert_len $blur $spread $color;
+    box-shadow: $inset $hort_len $vert_len $blur $spread $color;
+}
+
+@mixin text-shadow {
+	text-shadow: 1px 1px 3px #666;
+	filter: dropshadow(color=#666, offx=1, offy=1);
+}
+
+@mixin border-radius($top:5px, $right:5px, $bottom:5px, $left:5px){
+	-webkit-border-radius: $top $right $bottom $left;
+	border-radius: $top $right $bottom $left;
+}
+
+@mixin gradient($start_color, $end_color){
+	background: $start_color; /* Old browsers */
+	background: -moz-linear-gradient(top,  $start_color 0%, $end_color 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$start_color), color-stop(100%,$end_color)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  $start_color 0%,$end_color 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  $start_color 0%,$end_color 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  $start_color 0%,$end_color 100%); /* IE10+ */
+	background: linear-gradient(top,  $start_color 0%,$end_color 100%); /* W3C */
+}
+
+@mixin gradient_image($start_color, $end_color, $image){
+	background: $start_color $image; /* Old browsers */
+	background: $image, -moz-linear-gradient(top,  $start_color 0%, $end_color 100%); /* FF3.6+ */
+	background: $image,-webkit-gradient(linear, left top, left bottom, color-stop(0%,$start_color), color-stop(100%,$end_color)); /* Chrome,Safari4+ */
+	background: $image, -webkit-linear-gradient(top,  $start_color 0%,$end_color 100%); /* Chrome10+,Safari5.1+ */
+	background: $image, -o-linear-gradient(top,  $start_color 0%,$end_color 100%); /* Opera 11.10+ */
+	background: $image, -ms-linear-gradient(top,  $start_color 0%,$end_color 100%); /* IE10+ */
+	background: $image, linear-gradient(top,  $start_color 0%,$end_color 100%); /* W3C */
+}
+
+@mixin appearance($text: none){
+	-moz-appearance:$text;
+	-webkit-appearance:$text;
+}

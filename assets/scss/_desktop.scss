@@ -1,0 +1,44 @@
+@media only screen and (min-width: 1024px) {
+    #body{
+        border-top:0 none;
+        float:left;
+        margin:0;
+        width:72%;
+    }
+    #full{
+        border-top:0 none;
+        margin:0;
+        width:100%;
+    }
+    #main{
+        padding:0 40px 0 20px;
+    }
+    #main aside.sidebar{
+    	float:right;
+        margin:20px 0 0 0;
+        width:20%;
+
+        @include border-radius(10px, 10px, 10px, 10px);
+    }
+    header[role="banner"]{
+        .logo{
+            display:inline-block;
+            float:left;
+            padding:20px 0 0 20px;
+            margin:0;
+        }
+    }
+    footer ul{
+    	margin:-20px 0 0 0;
+    	li{
+            font-size:6em;
+        }
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+    .wrapper{
+        margin:0 auto;
+        width:1200px;
+    }
+}

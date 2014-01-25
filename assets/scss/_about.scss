@@ -1,0 +1,101 @@
+section.about{
+
+	@include clearfix;
+
+	aside{
+		text-align:center;
+
+		footer{
+			color:$gray_medium;
+			font-size:1.2em;
+			font-weight:600;
+			padding:5px 0 0 0;
+			text-align:center;
+		}
+	}
+}
+
+
+aside.sidebar.nav{
+	background:#fff;
+	border-top:1px solid $gray_light;
+	margin:0 20px;
+	padding:20px 0;
+
+
+	ul{
+		margin:0 auto;
+		width:300px;
+
+		@include clearfix;
+
+		li{
+			float:left;
+			margin:0;
+			padding:0;
+			text-align:center;
+			width:50%;
+
+			a{
+				font-size:1.4em;
+			}
+		}
+	}
+}
+
+fieldset.madlib{
+	background:#ddd;
+	font-size:1.4em;
+	margin:20px 0;
+	padding:20px;
+
+	input[type=text]{
+		background:none;
+		border:0 none;
+		border-bottom:1px solid $gray_medium;
+		font-family: 'Coming Soon', cursive;
+		margin:0 5px;
+		text-align:center;
+	}
+	textarea{
+		background:none;
+		border:1px solid $gray_light;
+		font-family: 'Coming Soon', cursive;
+		height:100px;
+		margin:5px 0 0 0;
+		padding:1%;
+		width:98%;
+	}
+}
+
+@media only screen and (min-width:600px) {
+	section.about{
+		aside.right{
+			border-left:1px solid $gray_light;
+			float:right;
+			margin:0 0 0 20px;
+			padding:0 0 10px 10px;
+		}
+	}
+}
+
+
+@media only screen and (min-width: 1024px) {
+	aside.sidebar.nav{
+		background:#fff;
+		border:1px solid $gray_light;
+		padding:20px;
+
+
+		ul{
+			margin:0;
+			width:auto;
+
+			li{
+				float:none;
+				text-align:left;
+				width:auto;
+			}
+		}	
+	}
+}

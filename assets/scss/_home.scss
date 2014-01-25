@@ -1,0 +1,63 @@
+aside.sidebar.home{
+	background:none;
+	padding:20px;
+
+	ul{
+		margin:0;
+		padding:0;
+
+		@include clearfix;
+
+		li{
+			float:left;
+			padding:20px 0;
+			width:100%;
+
+			a{
+				display:block;
+				font-size:1.4em;
+				font-style:italic;
+				text-transform:uppercase;
+
+				img{
+					border:1px solid #ccc;
+					max-width:100%;
+				}
+			}
+		}
+	}
+
+	p{
+		margin:1em 0;
+	}
+}
+
+@media only screen and (min-width:400px) {
+	aside.sidebar.home{
+		ul{
+			li{
+				padding:20px 0 20px 5%;
+				width:45%;
+
+				&:nth-child(odd){
+					padding:20px 5% 20px 0;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	aside.sidebar.home{
+		ul{
+			li{
+				padding:20px 0;
+				width:100%;
+
+				&:nth-child(odd){
+					padding:20px 0;
+				}
+			}
+		}
+	}
+}

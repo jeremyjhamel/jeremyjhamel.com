@@ -1,0 +1,43 @@
+/*  http://www.jeremyjhamel.com
+	built with SASS
+*/
+
+
+$body_color: #666;
+$heading_color: #666;
+$subtitle_color:#999;
+
+$link_color: #f7941e;
+$link_color_hover: #d9821a;
+$nav_link_color: #f7941e;
+
+$orange: #f7941e;
+
+$gray_dark: #666;
+$gray_medium: #999;
+$gray_light: #ccc;
+
+$default_font_family: "proxima-nova",sans-serif;
+
+
+@mixin body_background {
+	background: #fafafa;
+}
+
+
+@import 'reset';
+@import 'font-awesome';
+@import 'helpers';
+@import 'defaults';
+@import 'mobile';
+@import 'tablet';
+@import 'desktop';
+
+
+@import 'navigation';
+@import 'home';
+@import 'about';
+@import 'portfolio';
+
+@import 'blog';
+@import 'print';

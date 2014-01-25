@@ -1,0 +1,61 @@
+nav{
+	@include clearfix;
+
+	ul{
+		margin:0 20px;
+		padding:20px 0;
+		text-align:center;
+
+		li{
+			display:inline-block;
+			width:auto;
+
+			a{
+				color:#aaa;
+				font-size:1.8em;
+        font-weight:100;
+				padding:5px 10px;
+				white-space:nowrap;
+
+				&:hover{
+					color:#666;
+				}
+				&.current, &.currentParent{
+					color:#f7941e;
+				}
+				i{
+					font-size:1.6em;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 380px) {
+    nav {
+    	ul{
+    		margin:0 10%;
+    	}
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    nav{
+    	clear:none;
+        float:right;
+        padding:3px 0 0 0;
+
+        ul{
+        	margin:0 40px 0 0;
+            text-align:left;
+
+            li {
+                float:none;
+
+                a{
+                    padding:5px 0 5px 20px;
+                }
+            }
+        }
+    }
+}
