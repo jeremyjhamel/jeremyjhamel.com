@@ -5,7 +5,7 @@
 html{
   background:$gray_light;
   color:$gray_medium;
-  font-family:$default_font;
+  font-family:$font;
   font-size:1.8em;
   font-weight:300;
 }
@@ -24,7 +24,6 @@ header{
   h1{
     border-bottom:2px solid $gray_medium;
     color:$orange;
-    font-family:$slab_font;
     font-size:4em;
     font-weight:100;
     text-align:center;
@@ -57,7 +56,6 @@ header{
       }
 
       span{
-        font-family:$slab_font;
         text-transform:uppercase;
       }
 
@@ -94,7 +92,6 @@ header{
       clear:left;
       color:$gray_dark;
       float:left;
-      font-family:$slab_font;
       font-weight:700;
       text-transform:uppercase;
       width:105px;
@@ -113,7 +110,6 @@ header{
 
     th{
       color:$gray_dark;
-      font-family:$slab_font;
       font-weight:700;
       text-transform:uppercase;
       width:120px;
@@ -156,7 +152,6 @@ table{
     th{
       background:$gray_medium;
       color:$white;
-      font-family:$slab_font;
       font-size:0.8em;
       font-weight:700;
       text-transform:uppercase;
@@ -189,6 +184,9 @@ table{
         padding:20px 10px;
       }
     }
+    tr.discount{
+      background:$gray_light;
+    }
   }
 }
 
@@ -218,7 +216,6 @@ footer{
     }
     div.thanks{
       display:table-cell;
-      font-family:$slab_font;
       font-size:2em;
       padding:0 0 0 10px;
       text-align:left;

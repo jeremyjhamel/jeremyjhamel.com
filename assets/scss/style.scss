@@ -17,14 +17,17 @@ $gray_dark: #666;
 $gray_medium: #999;
 $gray_light: #ccc;
 
+$white: #fafafa;
+
 $default_font_family: "proxima-nova",sans-serif;
 
 
 @mixin body_background {
-	background: #fafafa;
+	background: $white;
 }
 
 
+@import 'bourbon/bourbon';
 @import 'reset';
 @import 'font-awesome';
 @import 'helpers';
@@ -39,5 +42,11 @@ $default_font_family: "proxima-nova",sans-serif;
 @import 'about';
 @import 'portfolio';
 
+@import 'forms';
 @import 'blog';
+
+
+@import 'demo';
+
+
 @import 'print';

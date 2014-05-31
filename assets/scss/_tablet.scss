@@ -5,7 +5,7 @@
     #main p{
         font-size:1.6em;
     }
-    
+
     article{
         header{
             h1{
@@ -15,7 +15,7 @@
             }
         }
     }
-    
+
     footer{
         text-align:left;
 
@@ -31,6 +31,16 @@
             input[type=search]{
                 width:250px;
             }
+        }
+    }
+
+    .content-third{
+        float:left;
+        padding:0 0 0 5%;
+        width:30%;
+
+        &:first-of-type{
+            padding:0;
         }
     }
 }
