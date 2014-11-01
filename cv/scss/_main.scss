@@ -3,6 +3,17 @@
   @include box-sizing(border-box);
 }
 
+a{
+  color:$gray_dark;
+  text-decoration:none;
+
+  &:hover, &:active{
+    color:$orange;
+
+    @include transition(all 0.2s ease-in-out);
+  }
+}
+
 .orange{
   color:$orange;
 }
@@ -77,6 +88,12 @@ h1{
   border-bottom:2px dashed $gray_light;
 }
 
+.desire{
+  font-size:0.8em;
+  padding:20px 0;
+  width:100%;
+}
+
 .experience{
   padding:20px 0;
   width:100%;
@@ -91,8 +108,10 @@ h1{
   }
 
   ul{
+    float:left;
     margin:0;
     padding:0 0 0 20px;
+    width:50%;
   }
 }
 
